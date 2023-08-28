@@ -118,7 +118,7 @@ header {
 
 .linha_lista {
     font-family: 'Muli', sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     color: #222;
     font-weight: 700;
     margin-left: 11.5rem;
@@ -131,15 +131,15 @@ header {
 
 .title_restaurante a {
     font-family: 'Muli', sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 700;
     text-decoration: none;
     color: #222;
 }
 
 .container-lista img {
-    width: 600px;
-    height: 350px;
+    width: 800px;
+    height: 550px;
     margin-left: 10rem;
 }
 
