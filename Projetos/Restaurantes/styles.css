@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-ifro {
+    width: 120px;
+    height: 120px;
+    margin: 1rem 2rem;
+}
+
+.logo-site {
+    width: 200px;
+    height: 200px;
+    margin: 0.5rem 1rem;
+}
+
+.dt_site {
+    font-family: 'apercu-pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
+}
+
+.text-site {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.title{
+    font-size: 130px;
+    font-family: 'apercu-pro', sans-serif;
+    font-weight: 600;
+    color: #222;
+    position: relative;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.title span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: transparent;
+    transition: width 0.8s ease-in-out;
+}
+
+.title:hover span::after {
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(255, 102, 0), #c00000);
+}
+
+.title span:hover {
+    animation-name: animacao_name;
+    transition: left 1s ease-in-out;
+    color: transparent;
+    background-image: linear-gradient(to top, rgb(255, 102, 0), #c00000);
+    -webkit-background-clip: text;
+}
+
+@keyframes animacao_name {
+    from {
+        color: #fff;
+    }
+
+    to {
+        color: linear-gradient(to left,
+                red,
+                blue);
+    }
+}
